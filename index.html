@@ -17,12 +17,12 @@
 
 <body>
     <!-- title -->
-    <div class="container" id="title">
-        <h1>Crystal CystalColletor</h1>
+    <div class="container border border-rounded mb-5 "id="title">
+        <h1>Crystal Colletor</h1>
     </div>
 
     <!-- instruction panel -->
-    <div class="container" id="Insturctions">
+    <div class="container mb-5" id="insturctions">
         <p>
             You will be given a random number at the start of the game
         </p>
@@ -50,15 +50,15 @@
     <div class="container">
 
         <!-- cpu generated number colomn -->
-        <div class="row">  
-            <div class="col-sm-4">
-                <p class="border rounded" id="cpuNum" >
+        <div class="row mb-3">  
+            <div class="col-sm-4 bg-light">
+                <p class="border border-rounded" id="cpuNum" >
                     Random number from javascript file
                 </p>
             </div>
 
             <!-- win and loss colomn -->
-            <div class="col-sm-4 border rounded" >
+            <div class="col-sm-4 border border-rounded bg-light" >
                 <p class="win">Wins:</p>
 
                 <p class="losses">losses:</p>
@@ -66,22 +66,36 @@
         </div>
 
         <!-- game pieces -->
-        <div class="row">
-            <div class="col-sm-2"> <!--Piece 1 sapphire-->
+        <div class="row mb-3">
+            <div class="col-sm-3"> <!--Piece 1 sapphire-->
                 <img id="sapphire" src="./assets/images/Sapphire.jpeg" alt="Blue Sapphire Gem" width="100px" height="100px">     
             </div>
             
-            <div class="col-sm-2"> <!--Piece 2 diamond-->
+            <div class="col-sm-3"> <!--Piece 2 diamond-->
                 <img id="diamond" src="./assets/images/diamond.jpeg" alt="Clear Diamond" width="100px" height="100px"> 
             </div>
 
-            <div class="col-sm-2"> <!--Piece 3 emerald-->
+            <div class="col-sm-3"> <!--Piece 3 emerald-->
                 <img id="emerald" src="./assets/images/emerald.jpeg" alt="Green Emerald" width="100px" height="100px"> 
             </div>
 
-            <div class="col-sm-2"> <!--Piece 4 ruby-->
+            <div class="col-sm-3"> <!--Piece 4 ruby-->
                 <img id="ruby" src="./assets/images/ruby.jpeg" alt="Red Ruby" width="100px" height="100px"> 
             </div>
+        </div>
+
+        <!-- score table -->
+        <div class="row">
+            <div class="col-sm-6 border border-rounded bg-light mb-3">
+                <p>Your Total score is</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6 border border-rounded bg-light">
+                <p id="yourScore"> your total score from java file</p>
+            </div>
+
         </div>
 
 

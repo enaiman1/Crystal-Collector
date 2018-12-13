@@ -10,13 +10,6 @@ body {
     background-size: cover;   
 }
 
-/* *{
-    box-sizing: border-box;  
-} */
-
-p{
-    
-}
 
 #title {
     width: 250px;
@@ -27,8 +20,7 @@ p{
     margin: 20px;
     opacity: .8;
     border-radius: 15px;
-    
-    
+     
 }
 
 
@@ -37,8 +29,7 @@ p{
     float: left;
     clear: both;
     border-radius: 15px;
-    background: rgb(113, 158, 212);
-    opacity: .6;
+    background: rgb(113, 158, 212, 0.5);
     text-align: center;
 }
 
@@ -46,7 +37,7 @@ p{
 #cpuColumn,
 #scoreStatement,
 #wonAndLoss {
-    background-color: white;
+    background-color: rgb(255, 255, 255, 0.7);
     border-radius: 15px;
     border: 1px solid;
     padding: 10px;
@@ -54,8 +45,11 @@ p{
     /* box-shadow: 5px 10px 20px #adc1e7; */
 }
 
-#wonAndLoss {
-    /* float: left; */
+.gemImg,
+.btn{
+    border-radius: 15px;
+    box-shadow: 5px 10px 20px #adc1e7;
+    float: left;
 }
 
 #instruction{
@@ -78,4 +72,10 @@ p{
    
 }
 
+.btn {
+    width: 100px;
+    height: 50px;
+    margin-bottom: 10px;
+    /* float: left; */
+}
 

@@ -20,10 +20,10 @@ $(document).ready(function(){
         console.log (specialNumber);
 
         // setting random value for gems (between 1 - 12)
-        blue = Math.floor(Math.random()*11+1);
-        clear = Math.floor(Math.random()*11+1);
-        green = Math.floor(Math.random()*11+1);
-        red = Math.floor(Math.random()*11+1);
+        blue = Math.floor(Math.random()*12+1);
+        clear = Math.floor(Math.random()*12+1);
+        green = Math.floor(Math.random()*12+1);
+        red = Math.floor(Math.random()*12+1);
 
         console.log(blue, clear, green, red);
         

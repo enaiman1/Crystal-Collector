@@ -1,12 +1,81 @@
-#title {
-    width: 250px;
-    height: 100px;
-   
-    background: orange;
-    text-align: center;
+
+
+
+body {
+    font-family: 'Dekko';
+  font-size: 18px;
+  line-height: 34px;
+    background: url(../images/cave.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+
+/* *{
+    box-sizing: border-box;  
+} */
+
+p{
     
 }
 
-#insturctions {
+#title {
+    width: 250px;
+    height: 100px;
+    background: rgb(113, 158, 212);
+    text-align: left;
+    float: left;
+    margin: 20px;
+    opacity: .8;
+    border-radius: 15px;
+    
+    
+}
+
+
+#mainSection{
+    width: 740px;
+    float: left;
+    clear: both;
+    border-radius: 15px;
+    background: rgb(113, 158, 212);
+    opacity: .6;
+    text-align: center;
+}
+
+#instruction,
+#cpuColumn,
+#scoreStatement,
+#wonAndLoss {
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid;
+    padding: 10px;
+    margin-bottom: 15px;
+    /* box-shadow: 5px 10px 20px #adc1e7; */
+}
+
+#wonAndLoss {
+    /* float: left; */
+}
+
+#instruction{
+    margin: 10px auto;
    
 }
+
+#cpuColumn
+{
+    width: 400px;
+    height: 85px;
+    /* left:  250px; */
+}
+
+#scoreStatement {
+    width: 400px;
+    height: 40px;
+    /* margin-bottom: 15px; */
+   
+   
+}
+
+

@@ -17,7 +17,7 @@ $(document).ready(function(){
         // cpu picks random number (19 and 120)
         // specialNumber = Math.floor(Math.random()*110 + 19);
         specialNumber = Math.floor((Math.random()*110)+19)
-        console.log (specialNumber);
+        // console.log (specialNumber);
 
         // setting random value for gems (between 1 - 12)
         blue = Math.floor(Math.random()*12+1);
@@ -25,31 +25,30 @@ $(document).ready(function(){
         green = Math.floor(Math.random()*12+1);
         red = Math.floor(Math.random()*12+1);
 
-        console.log(blue, clear, green, red);
+        // console.log(blue, clear, green, red);
         
     }
 
     function newGame () {
         newNumber();
-        userTotal = 0;
+        totalScore = 0;
         $("#specialNumber").text(specialNumber);
         $("#totalScore").text(totalScore);
         $("#sapphire").attr("data-gemvalue", blue);
         $("#diamond").attr("data-gemvalue", clear);
         $("#emerald").attr("data-gemvalue", green);
         $("#ruby").attr("data-gemvalue", red);
+        
 
     }
 
     function youWin() {
-        $("#winOrlose").text("Bravo!!");
         wins++;
         $("#wins").text(wins);
         totalScore = 0;
         newGame();
     }
     function youLose() {
-        $("#winOrlose").text("Sorry Try again");
         losses++;
         $("#losses").text(losses);
         totalScore = 0;
@@ -85,8 +84,14 @@ $(document).ready(function(){
         }
     });
 
+    // 
     $(".btn").on("click", function() {
+        console.log("button clicked")
         newGame();
+        $(".gameBoard").slideDown();
+        $("#instruction").slideUp();
+        $(".startButton").text("Restart");
+        
     });
 
 

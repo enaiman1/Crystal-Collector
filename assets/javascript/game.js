@@ -11,7 +11,7 @@ $(document).ready(function(){
     var green;
     var red;
     
-// creating an object for when a new game starts
+// creating a function for when a new game starts
     function newNumber() {
         
         // cpu picks random number (19 and 120)
@@ -31,6 +31,7 @@ $(document).ready(function(){
     function newGame () {
         newNumber();
         totalScore = 0;
+
         $("#specialNumber").text(specialNumber);
         $("#totalScore").text(totalScore);
         $("#sapphire").attr("data-gemvalue", blue);
@@ -44,18 +45,16 @@ $(document).ready(function(){
     function youWin() {
         wins++;
         $("#wins").text(wins);
-        totalScore = 0;
         newGame();
     }
     // if you lose - column will increments by one and total score goes back to 0
     function youLose() {
         losses++;
         $("#losses").text(losses);
-        totalScore = 0;
         newGame();
     }
 
-    newGame();
+    // newGame();
     // ever time the mouse button hovers over the gem it will fade (due to opacity)
     $(".gemImg").hover(function() {
         $(this).css({opacity: 0.3});
@@ -69,6 +68,7 @@ $(document).ready(function(){
     // when you click the gem store the value as a string
     $(".gemImg").on("click", function() {
         var gemValue = $(this).attr("data-gemvalue");
+        // console.log(this)
         
         // the string is then converted to a number
         gemValue = parseInt(gemValue);
